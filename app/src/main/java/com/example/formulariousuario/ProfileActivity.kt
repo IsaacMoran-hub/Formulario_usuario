@@ -36,5 +36,6 @@ class ProfileActivity : AppCompatActivity() {
 
             val imagen = findViewById<ImageView>(R.id.imageView)
             Glide.with(imagen).load(intent.getStringExtra("URL Imagen")).into(imagen)
+
     }
 }
