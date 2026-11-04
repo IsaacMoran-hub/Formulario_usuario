@@ -24,9 +24,9 @@ class MainActivity : AppCompatActivity() {
         buttonEnviar.setOnClickListener {
             val siguientePantalla = Intent(this, ProfileActivity::class.java)
             siguientePantalla.putExtra("Usuario", EditTextNombre.text.toString())
-            //siguientePantalla.putExtra("Correo", EditTextNombre.text.toString())
-            //siguientePantalla.putExtra("Biografia", EditTextNombre.text.toString())
-            //siguientePantalla.putExtra("URL Imagen", EditTextNombre.text.toString())
+            siguientePantalla.putExtra("Correo", EdittextEmail.text.toString())
+            siguientePantalla.putExtra("Biografia", EditTextBibliografia.text.toString())
+            siguientePantalla.putExtra("URL Imagen", EditTextURlimagen.text.toString())
             startActivity(siguientePantalla)
         }
 
