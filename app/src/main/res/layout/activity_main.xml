@@ -5,14 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/BackgroundApp"
     tools:context=".MainActivity">
+
 
     <Button
         android:id="@+id/buttonEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="84dp"
+        android:background="@color/Textos"
         android:text="Enviar"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"
@@ -75,6 +79,7 @@
         android:layout_height="27dp"
         android:layout_marginBottom="80dp"
         android:text="FORMULARIO"
+        android:textColor="@color/Textos"
         app:layout_constraintBottom_toTopOf="@+id/editTextNombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -83,6 +88,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
+        android:textColor="@color/Textos"
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -91,6 +97,8 @@
         app:layout_constraintStart_toStartOf="@+id/editTextNombre" />
 
     <TextView
+        android:textColor="@color/Textos"
+
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,6 +107,8 @@
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress" />
 
     <TextView
+        android:textColor="@color/Textos"
+
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -107,6 +117,8 @@
         app:layout_constraintStart_toStartOf="@+id/editTextBibliografia" />
 
     <TextView
+        android:textColor="@color/Textos"
+
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

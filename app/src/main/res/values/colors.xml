@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FA072C</color>
+    <color name="Textos">#7C365F</color>
+    <color name="BackgroundApp">#E2CDC8</color>
+
+
+
+
+
+
 </resources>

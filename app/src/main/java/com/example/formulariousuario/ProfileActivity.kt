@@ -22,20 +22,18 @@ class ProfileActivity : AppCompatActivity() {
         }
 
             val usuario = findViewById<TextView>(R.id.textViewNombre)
-            intent.getStringExtra("Usuario")
-            usuario.setText("$usuario")
-
             val email = findViewById<TextView>(R.id.textViewCorreo)
-            intent.getStringExtra("Correo")
-            email.setText("$email")
-
             val biografia = findViewById<TextView>(R.id.textViewBibliografia)
-            intent.getStringExtra("Biografia")
-            biografia.setText("$biografia")
-
-
             val imagen = findViewById<ImageView>(R.id.imageView)
-            Glide.with(imagen).load(intent.getStringExtra("URL Imagen")).into(imagen)
 
+            intent.getStringExtra("Usuario").apply { usuario.text = "$this" }
+
+
+            intent.getStringExtra("Correo").apply { email.text = "$this" }
+
+
+            intent.getStringExtra("Biografia").apply { biografia.text = "$this" }
+
+            Glide.with(imagen).load(intent.getStringExtra("URL Imagen")).into(imagen)
     }
 }
